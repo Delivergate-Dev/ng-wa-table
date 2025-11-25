@@ -41,6 +41,7 @@ cd projects/ng-wa-table
 4. Rebuild the library:
 
 ```bash
+rm -rf dist/ng-wa-table  
 ng build ng-wa-table
 ```
 
