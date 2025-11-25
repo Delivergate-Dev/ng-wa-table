@@ -4,6 +4,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   selector: 'ng-wa-table',
   templateUrl: './ng-wa-table.component.html',
   styleUrls: ['./ng-wa-table.component.scss'],
+  standalone: false
 })
 export class NgWaTableComponent implements OnInit {
   @Input() isDataLoaded: boolean;
