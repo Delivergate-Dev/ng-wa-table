@@ -63,7 +63,7 @@ export class NgWaTableComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onClickAction(type: any, data) {
+  onClickAction(type: any, data: any): void {
     switch (type) {
       case 'View':
         this.onViewClick.emit(data);
@@ -80,36 +80,36 @@ export class NgWaTableComponent implements OnInit {
     }
   }
 
-  getPages(pageNumber: any) {
+  getPages(pageNumber: any): void {
     console.log(pageNumber);
     this.getMoreItems.emit(pageNumber);
   }
 
-  onTagPressed(id: number) {
+  onTagPressed(id: number): void {
     console.log(id, 'toggle');
     this.tagPressed.emit(id);
   }
 
-  onSearch(event) {
+  onSearch(event: any): void {
     this.search.emit(event);
   }
 
-  onItemSort() {
+  onItemSort(): void {
     this.itemSort.emit();
   }
 
-  onChangeAccept(key: any, data: any, accept: any) {
+  onChangeAccept(key: any, data: any, accept: any): void {
     if (key === 'isAccepting') {
       this.onChangeAccepting.emit({ int: data, e: accept });
     } else if (key === 'isAutoAccepting') {
       this.onChangeAutoAccepting.emit({ int: data, e: accept });
     }
   }
-  selectAll() {
+  selectAll(): void {
     this.checkboxSelector.emit();
   }
 
-  onSelectItem(item, event) {
+  onSelectItem(item: any, event: any): void {
     this.selectItem.emit({ item, event });
   }
 }

@@ -37,8 +37,8 @@
   "bugs": "https://github.com/Delivergate-Dev/ng-wa-table.git/issues",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^20.3.13",
-    "@angular/core": "^20.3.13",
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0",
     "bootstrap": "^5.3.0"
   },
   "dependencies": {

@@ -5,7 +5,7 @@
       <!-- Filters -->
       <div class="row filterContainer">
         <div class="col-md-12 filter-btn d-flex align-content-center"
-          [style.padding.px]="!filterSearchAvailability ? '0' : ''">
+          [style.padding]="!filterSearchAvailability ? '0' : ''">
           <!-- Filter button -->
           <div *ngIf="filterAvailability" class=" p-2">
             <button type="button" class="btn-filter" data-bs-toggle="collapse" data-bs-target="#filterCollapse"
@@ -36,7 +36,7 @@
               [style.--tag-inactive-txt-color]="tagInActiveTextColor" [style.--tagsColor]="tagsColor">
               <div class="row filtersRow">
                 <div class="col-md-12 filterComponent">
-                  <diV class="row second-row-filter">
+                  <div class="row second-row-filter">
                     <div class="scrolling-wrapper">
                       <div class="card">
                         <button [style.--tag-active-txt-color]="tagActiveTextColor"
@@ -55,7 +55,7 @@
                         </button>
                       </div>
                     </div>
-                  </diV>
+                  </div>
                 </div>
               </div>
             </div>
